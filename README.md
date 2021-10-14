@@ -40,7 +40,11 @@ Object Defintions
 |Object Type| Function |
 -------------|:-----------|
 |Deployment|an object that can represent an application running on your cluster (governed by a spec)|
-|||
+|Service|is an abstraction which defines a logical set of Pods and a policy by which to access them (sometimes this pattern is called a micro-service). The set of Pods targeted by a Service is usually determined by a selector|
+|[Node](https://kubernetes.io/docs/concepts/architecture/nodes/)|may be a virtual or physical machine, depending on the cluster. Each node is managed by the control plane and contains the services necessary to run Pods|
+|[Pod](https://kubernetes.io/docs/concepts/workloads/pods/)|the smallest deployable units of computing that you can create and manage in Kubernetes, a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers|
+
+
 
 Sample deployment spec
 
@@ -66,5 +70,14 @@ spec:
         - containerPort: 80
 ```
 
+Workload Resources
 
+- Deployments
+- ReplicaSet
+- StatefulSets
+- DaemonSet
+- Jobs
+- TTL Controller for Finished Resources
+- CronJob
+- ReplicationController
 
