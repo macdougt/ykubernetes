@@ -43,7 +43,7 @@ Object Defintions
 |[Service](https://kubernetes.io/docs/concepts/services-networking/service/)|is an abstraction which defines a logical set of Pods and a policy by which to access them (sometimes this pattern is called a micro-service). The set of Pods targeted by a Service is usually determined by a selector|
 |[Node](https://kubernetes.io/docs/concepts/architecture/nodes/)|may be a virtual or physical machine, depending on the cluster. Each node is managed by the control plane and contains the services necessary to run Pods|
 |[Pod](https://kubernetes.io/docs/concepts/workloads/pods/)|the smallest deployable units of computing that you can create and manage in Kubernetes, a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers|
-
+|[ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/)|an API object used to store non-confidential data in key-value pairs. Pods can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume|
 
 
 Sample deployment spec
