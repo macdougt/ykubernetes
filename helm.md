@@ -59,8 +59,7 @@ annotations:
   example: A list of annotations keyed by name (optional).
 ```
 
-
-[ref](https://github.com/helm/charts/blob/master/stable/postgresql/Chart.yaml)
+Here is a sample for [postgres](https://github.com/helm/charts/blob/master/stable/postgresql/Chart.yaml):
 
 ```yaml
 apiVersion: v1
@@ -84,5 +83,7 @@ sources:
 maintainers: []
 engine: gotpl
 ```
+
+
 
 
