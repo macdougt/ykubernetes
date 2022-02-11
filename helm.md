@@ -84,6 +84,17 @@ maintainers: []
 engine: gotpl
 ```
 
+## [Templates and values](https://helm.sh/docs/topics/charts/#templates-and-values)
 
+All template files are stored in a chart's templates/ folder. When Helm renders the charts, it will pass every file in that directory through the template engine.
 
+Values for the templates are supplied two ways:
+
+Chart developers may supply a file called values.yaml inside of a chart. This file can contain default values.
+Chart users may supply a YAML file that contains values. This can be provided on the command line with helm install.
+When a user supplies custom values, these values will override the values in the chart's values.yaml file.
+
+[Template files](https://helm.sh/docs/topics/charts/#template-files)
+
+ - Follows [golang templates style](https://golang.org/pkg/text/template/)
 
