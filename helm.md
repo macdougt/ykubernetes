@@ -1,5 +1,10 @@
 [Helm charts](https://helm.sh/docs/topics/charts/)
 
+Helm is a package manager that also happens to include templating capabilities. Previous sentence taken from this [article](https://codefresh.io/docs/docs/new-helm/helm-best-practices/#helm-vs-k8s-templates).
+
+`Similar to brew, apt, yum but different target`
+
+
 A chart is a packaging format
 
 Format:
