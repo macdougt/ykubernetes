@@ -13,7 +13,7 @@ Is the line above enough to understand k8s, no! But it is a start (started a sen
 
 Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available.
 
-<span style="color:grey">So this is more specific and captures the intended direction of k8s. But I am not feeling it. Like most things, you will have to live k8s for a while for it to sink in. In addition, k8s aims to address the following feature areas (compounding the problem):</span>
+`So this is more specific and captures the intended direction of k8s. But I am not feeling it. Like most things, you will have to live k8s for a while for it to sink in. In addition, k8s aims to address the following feature areas (compounding the problem):`
 
 
 Features
@@ -46,6 +46,8 @@ Kubernetes component
 
 [<img src="https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg" width="600">](https://kubernetes.io/docs/concepts/overview/components/)
 
+
+`Truth be told, I started this page to help me grok k8s, and created the following section called Object Definitions with good intentions. I was copying the style of the k8s documentation and may as well posted a link or better never created this page. Reviewing the documentation has led me to a different choice, commenting on the content as I review. To access the list, I mean the long list of so called objects (use the link to the more accurately named [Resource Types](https://kubernetes.io/docs/reference/kubectl/overview/#resource-types)).`
 
 Object Defintions
 
