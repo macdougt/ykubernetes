@@ -47,7 +47,7 @@ Kubernetes component
 [<img src="https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg" width="600">](https://kubernetes.io/docs/concepts/overview/components/)
 
 
-`Truth be told, I started this page to help me grok k8s, and created the following section called Object Definitions with good intentions. I was copying the style of the k8s documentation and may as well posted a link or better never created this page. Reviewing the documentation has led me to a different choice, commenting on the content as I review. To access the list, I mean the long list of so called objects (use the link to the more accurately named [Resource Types](https://kubernetes.io/docs/reference/kubectl/overview/#resource-types)).`
+`Truth be told, I started this page to help me grok k8s, and created the following section called Object Definitions with good intentions. I was copying the style of the k8s documentation and may as well posted a link or better never created this page. Reviewing the documentation has led me to a different choice, commenting on the content as I review. To access the list, I mean the long list of so called objects (use the link to the more accurately named [Resource Types](https://kubernetes.io/docs/reference/kubectl/overview/#resource-types)). I leave the following list here to remain in shame.`
 
 Object Defintions
 
@@ -59,6 +59,12 @@ Object Defintions
 |[Pod](https://kubernetes.io/docs/concepts/workloads/pods/)|the smallest deployable units of computing that you can create and manage in Kubernetes, a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers|
 |[ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/)|an API object used to store non-confidential data in key-value pairs. Pods can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume|
 |[Custom Resources (CRD)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)|an extension of the Kubernetes API that is not necessarily available in a default Kubernetes installation|
+
+`We now realize that there is a lot to this and has spurred on the creation of many tools that help tame the tasks involved with k8s. For example, [helm charts](/helm.md).`
+
+
+
+
 
 Sample deployment spec
 
