@@ -1,8 +1,20 @@
 # ykubernetes
 
+### TLDR
+
+Wow, try to capture kubernetes(k8s) in a couple fo lines, man this is hard, some things are complex. In a nutshell, k8s is a system used to automate the configuration and deployment of another system.
+
+
+### Longer Story
+
+Is the line above enough to understand k8s, no! But it is a start (started a sentence with *but*, my first grade teacher is cringing). 
+
 [Definition taken from their documentation](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/):
 
 Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available.
+
+<span style="color:grey">So this is more specific and captures the intended direction of k8s. But I am not feeling it. Like most things, you will have to live k8s for a while for it to sink in. In addition, k8s aims to address the following feature areas (compounding the problem):</span>
+
 
 Features
 --------
