@@ -103,3 +103,5 @@ When a user supplies custom values, these values will override the values in the
 
  - Follows [golang templates style](https://golang.org/pkg/text/template/)
 
+
+I would like to construct an example that involves data ingestion and setting up a cluster
