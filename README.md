@@ -72,10 +72,11 @@ When you create a Service, Kubernetes automatically assigns it a stable IP addre
 
 There are several types of Services in Kubernetes, including:
 
-ClusterIP: The default type, which exposes the Service on a cluster-internal IP address.
-NodePort: Exposes the Service on a port on each node in the cluster.
-LoadBalancer: Exposes the Service externally using a cloud provider's load balancer.
-ExternalName: Maps the Service to an external DNS name.
+- ClusterIP: The default type, which exposes the Service on a cluster-internal IP address.
+- NodePort: Exposes the Service on a port on each node in the cluster.
+- LoadBalancer: Exposes the Service externally using a cloud provider's load balancer.
+- ExternalName: Maps the Service to an external DNS name.
+
 Services can also be combined with other Kubernetes objects, such as Deployments and ReplicaSets, to provide a complete solution for managing the lifecycle of your application in a Kubernetes cluster.
 
 [Selector](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
