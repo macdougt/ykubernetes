@@ -103,9 +103,10 @@ Nodes are responsible for running the actual workloads in the form of containers
 
 Nodes have several components that enable them to run containers, including:
 
-Container runtime: A software that runs containers, such as Docker, containerd, or CRI-O.
-Kubelet: An agent that runs on each Node and communicates with the Kubernetes control plane. It is responsible for starting, stopping, and monitoring the containers on the Node.
-kube-proxy: A network proxy that runs on each Node and enables the Service abstraction in Kubernetes. It maintains network rules on the Node that allow communication to the pods.
+- Container runtime: A software that runs containers, such as Docker, containerd, or CRI-O.
+- Kubelet: An agent that runs on each Node and communicates with the Kubernetes control plane. It is responsible for starting, stopping, and monitoring the containers on the Node.
+- kube-proxy: A network proxy that runs on each Node and enables the Service abstraction in Kubernetes. It maintains network rules on the Node that allow communication to the pods.
+
 Nodes are a fundamental building block in Kubernetes, and are used to provide compute resources for running containerized applications. They can be added or removed from a cluster dynamically to scale up or down the capacity of the cluster.
 
 
