@@ -158,6 +158,20 @@ Operators are built using the Kubernetes API, and they use custom resource defin
 
 Operators can be written in any language, and they are typically packaged and distributed as Docker containers. There are also many open-source operators available for popular applications, such as PostgreSQL, Apache Kafka, and Prometheus, which can be deployed in a Kubernetes cluster to manage these applications with ease.
 
+[Job](https://kubernetes.io/docs/concepts/workloads/controllers/job/)
+
+In Kubernetes, a Job is an object that creates one or more Pods and ensures that a specified number of them successfully complete. Jobs are used to run batch or parallel processing tasks in a Kubernetes cluster, such as data processing or backups.
+
+When a Job is created, it creates one or more Pods to perform the specified task. The Pods run until the task is complete, and then terminate. If a Pod fails to complete the task, Kubernetes automatically restarts it to ensure that the specified number of successful completions is achieved.
+
+Jobs can be used to run tasks in parallel, or to run tasks that require a specific order of execution. They are often used in conjunction with other Kubernetes objects, such as ConfigMaps, Secrets, or Persistent Volumes, to provide configuration data or persistent storage to the Pods.
+
+Jobs can also be created as a CronJob, which is a Job that runs at a specified interval, similar to a cron job in a Linux environment.
+
+Overall, Jobs are a powerful feature in Kubernetes that allow users to run batch or parallel processing tasks in a reliable and scalable way. They provide a way to automate and manage complex processing tasks in a distributed environment, and ensure that the tasks are completed successfully.
+
+
+
 ---
 
 `We now realize that there is a lot to this and has spurred on the creation of many tools that help tame the tasks involved with k8s. For example:` [helm charts](/helm.md)
