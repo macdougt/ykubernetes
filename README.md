@@ -87,9 +87,10 @@ Selectors are used to specify the criteria for selecting objects based on their 
 
 Selectors can be used in several places in Kubernetes, including:
 
-Services: A Service in Kubernetes selects a set of pods based on their labels. The Service provides a stable IP address and DNS name that can be used to access the pods.
-Deployments and ReplicaSets: A Deployment or ReplicaSet in Kubernetes creates and manages a set of pods based on a desired state. The desired state is specified using a label selector, which selects the pods that should be managed by the Deployment or ReplicaSet.
-Jobs and CronJobs: A Job or CronJob in Kubernetes creates and manages one or more pods to perform a specific task. The pods are selected based on a label selector.
+- Services: A Service in Kubernetes selects a set of pods based on their labels. The Service provides a stable IP address and DNS name that can be used to access the pods.
+- Deployments and ReplicaSets: A Deployment or ReplicaSet in Kubernetes creates and manages a set of pods based on a desired state. The desired state is specified using a label selector, which selects the pods that should be managed by the Deployment or ReplicaSet.
+- Jobs and CronJobs: A Job or CronJob in Kubernetes creates and manages one or more pods to perform a specific task. The pods are selected based on a label selector.
+
 Selectors are a powerful feature in Kubernetes that allow users to group and manage objects based on their labels. They provide a flexible and scalable way to select objects and perform operations on them, such as scaling, updating, or deleting.
 
 [Node](https://kubernetes.io/docs/concepts/architecture/nodes/)
