@@ -51,7 +51,7 @@ Kubernetes component
 
 ### Object Defintions
 
-[Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+[Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) [application management layer: manage the lifecycle of your application Pods, including scaling and updating]
 
 A Deployment defines a desired state for the application or workload it manages, and continuously works to reconcile the current state with the desired state (works on the idea of a plan of intent). If the current state does not match the desired state, the Deployment controller automatically creates or deletes replicas to achieve the desired state.
 
@@ -62,7 +62,7 @@ In addition, Deployments support rolling updates, which allow you to update your
 Deployments are a core building block in Kubernetes, and are used extensively to manage the lifecycle of applications and workloads in a Kubernetes cluster.
 
 
-[Service](https://kubernetes.io/docs/concepts/services-networking/service/)
+[Service](https://kubernetes.io/docs/concepts/services-networking/service/) [network layer:expose your applications and manage network access]
 
 In Kubernetes, a Service is an object that provides a stable network endpoint for accessing a set of pods in a cluster. It acts as an abstraction layer over the underlying pods, providing a single DNS name and IP address that can be used to access the pods.
 
@@ -170,7 +170,12 @@ Jobs can also be created as a CronJob, which is a Job that runs at a specified i
 
 Overall, Jobs are a powerful feature in Kubernetes that allow users to run batch or parallel processing tasks in a reliable and scalable way. They provide a way to automate and manage complex processing tasks in a distributed environment, and ensure that the tasks are completed successfully.
 
+[Secret](https://kubernetes.io/docs/concepts/configuration/secret/)
+A Secret is an object that contains a small amount of sensitive data such as a password, a token, or a key. Such information might otherwise be put in a Pod specification or in a container image. Using a Secret means that you don't need to include confidential data in your application code.
 
+Because Secrets can be created independently of the Pods that use them, there is less risk of the Secret (and its data) being exposed during the workflow of creating, viewing, and editing Pods. Kubernetes, and applications that run in your cluster, can also take additional precautions with Secrets, such as avoiding writing sensitive data to nonvolatile storage.
+
+Secrets are similar to ConfigMaps but are specifically intended to hold confidential data.
 
 ---
 
