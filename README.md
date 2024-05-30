@@ -53,7 +53,7 @@ Kubernetes component
 
 [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 
-A Deployment defines a desired state for the application or workload it manages, and continuously works to reconcile the current state with the desired state. If the current state does not match the desired state, the Deployment controller automatically creates or deletes replicas to achieve the desired state.
+A Deployment defines a desired state for the application or workload it manages, and continuously works to reconcile the current state with the desired state (works on the idea of a plan of intent). If the current state does not match the desired state, the Deployment controller automatically creates or deletes replicas to achieve the desired state.
 
 Deployments also provide rollback functionality to enable the user to roll back to a previous deployment revision if needed. This feature allows you to quickly and easily revert to a previous version of your application in case a new version introduces issues or bugs.
 
@@ -207,7 +207,7 @@ spec:
 Workload Resources
 
 - Deployments
-- ReplicaSet
+- ReplicaSet (multiplicity of pods)
 - StatefulSets
 - DaemonSet
 - Jobs
