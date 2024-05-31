@@ -47,6 +47,14 @@ Kubernetes component
 [<img src="https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg" width="600">](https://kubernetes.io/docs/concepts/overview/components/)
 
 
+### Architecture
+
+#### Control Plane
+continually and actively manages every object's actual state to match the desired state you supplied
+
+
+
+
 `Truth be told, I started this page to help me grok k8s, and created the following section called Object Definitions with good intentions. I was copying the style of the k8s documentation and may as well posted a link or better never created this page. Reviewing the documentation has led me to a different choice, commenting on the content as I review. To access the list, I mean the long list of so called objects (use the link to the more accurately named` [Resource Types](https://kubernetes.io/docs/reference/kubectl/overview/#resource-types)`). I leave the following list here to remain in shame.`
 
 ### Object Defintions
