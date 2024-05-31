@@ -136,6 +136,9 @@ ConfigMaps can also be used to provide configuration data to other Kubernetes ob
 
 ConfigMaps are a powerful feature in Kubernetes that make it easy to manage configuration data for containerized applications. They provide a flexible and scalable way to manage configuration data in a dynamic and distributed environment.
 
+Resource
+
+A resource is an endpoint in the Kubernetes API that stores a collection of API objects of a certain kind; for example, the built-in pods resource contains a collection of Pod objects.
 
 [Custom Resources (CRD)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
 
