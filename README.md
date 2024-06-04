@@ -49,11 +49,32 @@ Kubernetes component
 
 ### Architecture
 
+Kubernetes is made up of:
+- Control Plane
+- Data Plane
+
 #### Control Plane
-continually and actively manages every object's actual state to match the desired state you supplied
+Continually and actively manages every object's actual state to match the desired state you supplied
+
+Components:
+
+- API Server
+- Scheduler
+- Kubernetes Controller Manager
+- etcd
+- Cloud Controller Manager
+
+##### API Server
+
+Serves API for Kubernetes control plane. Handles internal and external requests. *kubectl*, *kubeadm* calls the API under the covers.
+
+##### Scheduler
+
+Schedules pods on specific nodes according to automated workflows and user defined conditions (including 
 
 
-
+#### Data Plane
+*Machines* that can run containerized workloads. Each node is managed by the kubelet, an agent that receives commands from the control plane.
 
 `Truth be told, I started this page to help me grok k8s, and created the following section called Object Definitions with good intentions. I was copying the style of the k8s documentation and may as well posted a link or better never created this page. Reviewing the documentation has led me to a different choice, commenting on the content as I review. To access the list, I mean the long list of so called objects (use the link to the more accurately named` [Resource Types](https://kubernetes.io/docs/reference/kubectl/overview/#resource-types)`). I leave the following list here to remain in shame.`
 
