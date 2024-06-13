@@ -1,5 +1,7 @@
 # Kubernetes is like a Company?
 
+## Structural Analysis
+
 ### Company (Kubernetes Cluster)
 The entire Kubernetes cluster is like a large company. This company has various departments, teams, and management levels to ensure the business operations run smoothly.
 
@@ -40,3 +42,28 @@ Ensures that each team or project (pod) gets the necessary support, such as HR, 
 
 ### Divisions (Namespaces)
 Manage different business units or functions. Each division works independently but under the same company umbrella.
+
+## Scenario
+
+Imagine a new product (application) needs to be developed:
+
+### Request at Headquarters
+A product manager submits a request to the executive assistant (API Server) to develop a new product.
+
+### Planning and Scheduling
+The operations manager (Scheduler) decides the best allocation of resources (teams, tasks, equipment) for the new product based on availability and requirements.
+
+### Assigning Teams and Tasks
+The project managers (Controller Manager) ensure that the project is assigned to the appropriate teams (pods) and people (containers) are assigned the tasks as per the project plan.
+
+### IT Support
+The IT department (kube-proxy) ensures that the necessary network and technical support is provided to the teams.
+
+### Ongoing Supervision
+The team leads (kubelet) continuously check to ensure that each task or project remains on track and reports any issues to the executive team.
+
+### Corporate Services
+The teams are connected to necessary corporate services, such as HR and finance, to ensure the project runs smoothly.
+
+
+
