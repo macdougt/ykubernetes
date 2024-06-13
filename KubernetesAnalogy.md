@@ -17,3 +17,25 @@ Ensures that the company's operations follow the planned schedules and strategie
 
 ### etcd (Corporate Data Repository)
 Keeps track of all essential corporate data, such as business records, project schedules, and company plans.
+
+
+## Departments (Worker Nodes)
+This is where the actual work happens. These departments host the teams, projects, and resources necessary for business operations.
+
+### Pods (Teams): 
+Handle one or more projects or tasks (containers). Just like teams in a company, pods have a defined structure and purpose.
+
+### Containers (Employees)
+The smallest units where specific activities occur, such as developing a product or handling a customer service request.
+
+## Team Leads (Kubelet)
+Ensures that all projects or tasks (pods) in their department (worker node) are functioning properly. They report back to the executive team (master node) with updates.
+
+## IT Department (Kube-Proxy)
+Ensures that data (network traffic) gets routed to the correct teams or projects (pods) efficiently and handles network rules and load balancing.
+
+## Corporate Services (Services)
+Ensures that each team or project (pod) gets the necessary support, such as HR, finance, and office supplies.
+
+## Divisions (Namespaces)
+Manage different business units or functions. Each division works independently but under the same company umbrella.
