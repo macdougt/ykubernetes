@@ -16,4 +16,4 @@ Decides the best allocation of resources (teams, tasks, equipment) for each proj
 Ensures that the company's operations follow the planned schedules and strategies. They ensure that projects are completed and maintained as planned.
 
 ### etcd (Corporate Data Repository)
-etcd is like the corporate data repository that keeps track of all essential corporate data, such as business records, project schedules, and company plans.
+Keeps track of all essential corporate data, such as business records, project schedules, and company plans.
