@@ -51,18 +51,18 @@ Kubernetes component
 
 Kubernetes is made up of:
 - Control Plane
+  - API Server
+  - Scheduler
+  - Kubernetes Controller Manager
+  - etcd
+  - Cloud Controller Manager
 - Data Plane
+  - kubelet
+  - kube-proxy
+  - container runtime
 
 #### Control Plane
 Continually and actively manages every object's actual state to match the desired state you supplied
-
-Components:
-
-- API Server
-- Scheduler
-- Kubernetes Controller Manager
-- etcd
-- Cloud Controller Manager
 
 ##### API Server
 
@@ -70,7 +70,7 @@ Serves API for Kubernetes control plane. Handles internal and external requests.
 
 ##### Scheduler
 
-Schedules pods on specific nodes according to automated workflows and user defined conditions (including 
+Schedules pods on specific nodes according to automated workflows and user defined conditions
 
 
 #### Data Plane
